@@ -1,0 +1,179 @@
+[
+  {
+    "comments": [
+      {
+        "line": 3,
+        "value": "#@regression"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 8,
+        "name": "I should access customer account",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7095523400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should click on \u0027Bank Manager Login\u0027 Tab",
+            "match": {
+              "location": "BankManagerSteps.iShouldClickOnBankManagerLoginTab()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 41415292700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "I should add Customer Successfully",
+        "description": "",
+        "id": "bank-manager;i-should-add-customer-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 2899467900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 613660300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should click on Add Customer tab",
+            "match": {
+              "location": "BankManagerSteps.iShouldClickOnAddCustomerTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1708230800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I Should enter first name \"Hasit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hasit",
+                  "offset": 27
+                }
+              ],
+              "location": "BankManagerSteps.iShouldEnterFirstName(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 142548400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should enter last name\"Shah\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shah",
+                  "offset": 25
+                }
+              ],
+              "location": "BankManagerSteps.iShouldEnterLastName(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150412900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should  Enter post code \"L15 0HR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "L15 0HR",
+                  "offset": 27
+                }
+              ],
+              "location": "BankManagerSteps.iShouldEnterPostCode(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1841690700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on \u0027Add Customer\u0027 Button",
+            "match": {
+              "location": "BankManagerSteps.iClickOnAddCustomerButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 84935200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should verify message \u0027Customer added successfully\u0027",
+            "match": {
+              "location": "BankManagerSteps.iShouldVerifyMessageCustomerAddedSuccessfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17534800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click \u0027ok\u0027 on popup",
+            "match": {
+              "location": "BankManagerSteps.iClickOkOnPopup()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Bank Manager",
+    "description": "As User,\r\nI want to add and open customer account",
+    "id": "bank-manager",
+    "keyword": "Feature",
+    "uri": "bankmanager.feature"
+  }
+]
